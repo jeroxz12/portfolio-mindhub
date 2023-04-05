@@ -24,10 +24,11 @@ const accionarSlide = (accion) => {
     if(accion.toLowerCase() === 'next'){
         contadorCarrousel++;
         proyectos[contadorCarrousel - 1].style.display = 'none'
-        proyectos[contadorCarrousel].style.display = 'flex'            
+        proyectos[contadorCarrousel].style.display = 'flex'
     } else if (accion.toLowerCase() === 'back') {
         contadorCarrousel--;
         proyectos[contadorCarrousel + 1].style.display = 'none'
+        console.log(proyectos[contadorCarrousel + 1].childNodes);
         proyectos[contadorCarrousel].style.display = 'flex'             
 
     } else {
